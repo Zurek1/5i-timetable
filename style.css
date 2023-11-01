@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"days main homework"
+		"footer footer footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: days;
+}
+
+.timetable {
+	grid-area: main;
+}
+
+.homework {
+	grid-area: homework;
+}
+
+footer {
+	grid-area: footer;
+}
